@@ -1,0 +1,73 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+.row {
+  width: 100%;
+  padding: 15px;
+}
+
+/* Section Styling */
+.section {
+  position: relative;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  padding: 40px 15px 15px 15px;
+  margin: 10px;
+  float: left;
+  color: #000;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffa500; /* Example color */
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-size: 1.25em;
+}
+
+/* Desktop: ≥ 992px */
+@media (min-width: 992px) {
+  .section {
+    width: 31.33%;
+    margin: 1%;
+  }
+}
+
+/* Tablet: 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 47%;
+    margin: 1.5%;
+  }
+
+  .section:nth-child(3) {
+    width: 96%;
+    clear: both;
+  }
+}
+
+/* Mobile: ≤ 767px */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    margin-bottom: 15px;
+    float: none;
+  }
+}
